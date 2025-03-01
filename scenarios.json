@@ -16,16 +16,30 @@
         {
           "question": "What is the purpose of your visit?",
           "response": "I’m here to visit New York City for two weeks.",
-          "emotion": "calm"
+          "emotion": "calm",
+          "training_tip": "Ask open-ended questions to gather more details."
         },
         {
           "question": "Can I see your return ticket?",
           "response": "Yes, here it is. I’m returning on [date 6 months later].",
-          "emotion": "nervous"
+          "emotion": "nervous",
+          "training_tip": "Verify documents for inconsistencies and cross-check with databases."
         }
       ],
       "decision": "Detain for further questioning",
-      "decision_reason": "Inconsistent travel dates and suspicious travel history."
+      "decision_reason": "Inconsistent travel dates and suspicious travel history.",
+      "solutions": [
+        "Cross-check travel history using TECS/ATS.",
+        "Verify return ticket details with the airline."
+      ],
+      "protocols": [
+        "Detain under 8 CFR 235.3 for further investigation.",
+        "Notify a supervisor for secondary screening."
+      ],
+      "next_steps": [
+        "Practice identifying inconsistencies in travel documents.",
+        "Conduct mock interviews with travelers who have suspicious travel histories."
+      ]
     },
     {
       "id": 2,
@@ -43,16 +57,30 @@
         {
           "question": "Who are you meeting with?",
           "response": "I have a meeting with [fake company name].",
-          "emotion": "overly confident"
+          "emotion": "overly confident",
+          "training_tip": "Ask for specific details about the company and meeting."
         },
         {
           "question": "Can I see your work visa?",
           "response": "Of course, here it is.",
-          "emotion": "defensive"
+          "emotion": "defensive",
+          "training_tip": "Inspect documents for formatting errors and validate with issuing authorities."
         }
       ],
       "decision": "Deny entry",
-      "decision_reason": "Forged documents and fraudulent business claims."
+      "decision_reason": "Forged documents and fraudulent business claims.",
+      "solutions": [
+        "Validate work visa with the issuing embassy or consulate.",
+        "Conduct a background check on the claimed company."
+      ],
+      "protocols": [
+        "Deny entry under 8 USC 1182(a)(7)(i) for invalid documents.",
+        "Provide instructions for appeal or reapplication."
+      ],
+      "next_steps": [
+        "Practice identifying forged documents using training materials.",
+        "Simulate scenarios with travelers using fake identities."
+      ]
     },
     {
       "id": 3,
@@ -70,16 +98,30 @@
         {
           "question": "Why are you seeking asylum?",
           "response": "I fled my country because of violence. My family was killed.",
-          "emotion": "sad"
+          "emotion": "sad",
+          "training_tip": "Use the PEACE model to build rapport and gather accurate information."
         },
         {
           "question": "Can you tell me more about the incident?",
           "response": "It happened last year... no, two years ago. I can’t remember exactly.",
-          "emotion": "confused"
+          "emotion": "confused",
+          "training_tip": "Look for inconsistencies in timelines and details."
         }
       ],
       "decision": "Detain for further questioning",
-      "decision_reason": "Inconsistent timeline and rehearsed responses."
+      "decision_reason": "Inconsistent timeline and rehearsed responses.",
+      "solutions": [
+        "Request additional documentation (e.g., police reports, medical records).",
+        "Consult with an asylum officer for further evaluation."
+      ],
+      "protocols": [
+        "Detain under 8 CFR 235.3 for further investigation.",
+        "Provide access to legal counsel and asylum officer."
+      ],
+      "next_steps": [
+        "Practice interviewing asylum seekers with complex backstories.",
+        "Review case studies of asylum fraud for better detection."
+      ]
     },
     {
       "id": 4,
@@ -93,126 +135,272 @@
         {
           "question": "What is the purpose of your visit?",
           "response": "I’m here to visit Disneyland for a week.",
-          "emotion": "happy"
+          "emotion": "happy",
+          "training_tip": "Verify travel documents and return ticket."
         },
         {
           "question": "Can I see your return ticket?",
           "response": "Sure, here it is. I’m returning on [date].",
-          "emotion": "calm"
+          "emotion": "calm",
+          "training_tip": "Cross-check with TECS/ATS for travel history."
         }
       ],
       "decision": "Admit",
-      "decision_reason": "No red flags; all documents and responses are consistent."
+      "decision_reason": "No red flags; all documents and responses are consistent.",
+      "solutions": [
+        "Confirm return ticket and travel itinerary.",
+        "Welcome the traveler and provide entry instructions."
+      ],
+      "protocols": [
+        "Admit under 8 USC 1182(a)(7)(i) for valid documents and consistent responses."
+      ],
+      "next_steps": [
+        "Practice identifying legitimate travelers efficiently.",
+        "Conduct mock interviews with low-risk travelers to improve speed and accuracy."
+      ]
     },
     {
       "id": 5,
-      "name": "Chen Wei",
-      "nationality": "Chinese",
-      "age": 40,
+      "name": "Carlos Mendez",
+      "nationality": "Colombian",
+      "age": 38,
       "purpose": "Business",
       "emotional_state": "evasive",
       "red_flags": [
-        "Suspicious connections: Mentions a company under investigation.",
-        "Vague responses: Avoids direct answers about purpose of visit.",
-        "Evasive body language: Avoids eye contact and fidgets."
+        "Suspicious luggage: Refuses to open a suitcase for inspection.",
+        "Vague business details: Cannot provide specific meeting locations.",
+        "Nervous behavior: Sweating and avoiding eye contact."
       ],
       "script": [
         {
-          "question": "What is the nature of your business?",
-          "response": "I’m here for a conference... and some meetings.",
-          "emotion": "evasive"
+          "question": "What is the purpose of your visit?",
+          "response": "I’m here for a business conference.",
+          "emotion": "evasive",
+          "training_tip": "Ask for specific details about the conference and meetings."
         },
         {
-          "question": "Can you provide details about the conference?",
-          "response": "It’s about technology... I don’t have the exact details.",
-          "emotion": "nervous"
+          "question": "Can you open your suitcase for inspection?",
+          "response": "I’d rather not... it’s personal.",
+          "emotion": "defensive",
+          "training_tip": "Insist on inspecting luggage and explain the legal requirement."
         }
       ],
       "decision": "Detain for further questioning",
-      "decision_reason": "Suspicious connections and evasive responses."
+      "decision_reason": "Refusal to comply with inspection and suspicious behavior.",
+      "solutions": [
+        "Use X-ray or K9 unit to inspect luggage.",
+        "Notify a supervisor for secondary screening."
+      ],
+      "protocols": [
+        "Detain under 8 CFR 235.3 for refusal to comply with inspection.",
+        "Follow TSA protocols for handling suspicious luggage."
+      ],
+      "next_steps": [
+        "Practice handling non-compliant travelers.",
+        "Conduct drills for inspecting suspicious luggage."
+      ]
     },
     {
       "id": 6,
-      "name": "Luis Martinez",
-      "nationality": "Colombian",
-      "age": 29,
-      "purpose": "Family visit",
-      "emotional_state": "anxious",
+      "name": "Li Wei",
+      "nationality": "Chinese",
+      "age": 52,
+      "purpose": "Tourism",
+      "emotional_state": "calm",
       "red_flags": [
-        "Overstayed visa: Previously overstayed a visa by 3 months.",
-        "Inconsistent story: Claims to visit family but cannot provide addresses.",
-        "Anxious behavior: Sweating and avoiding direct answers."
+        "Overstayed visa: Previously overstayed a visa by 6 months.",
+        "Inconsistent story: Claims to visit family but cannot provide addresses."
       ],
       "script": [
         {
-          "question": "Who are you visiting?",
-          "response": "My cousin in Miami.",
-          "emotion": "anxious"
+          "question": "What is the purpose of your visit?",
+          "response": "I’m here to visit my son in Los Angeles.",
+          "emotion": "calm",
+          "training_tip": "Verify family details and travel history."
         },
         {
-          "question": "Can you provide their address?",
-          "response": "I don’t remember the exact address... I’ll call them later.",
-          "emotion": "defensive"
+          "question": "Can you provide your son’s address?",
+          "response": "I don’t remember the exact address... I’ll call him later.",
+          "emotion": "nervous",
+          "training_tip": "Look for inconsistencies in family details."
         }
       ],
       "decision": "Deny entry",
-      "decision_reason": "History of overstaying visa and inconsistent story."
+      "decision_reason": "History of visa overstay and inconsistent story.",
+      "solutions": [
+        "Verify previous visa records using TECS/ATS.",
+        "Contact the claimed family member for verification."
+      ],
+      "protocols": [
+        "Deny entry under 8 USC 1182(a)(9)(B) for previous visa overstay.",
+        "Provide instructions for appeal or reapplication."
+      ],
+      "next_steps": [
+        "Practice identifying travelers with a history of visa violations.",
+        "Review case studies of visa overstay scenarios."
+      ]
     },
     {
       "id": 7,
-      "name": "Anna Kowalski",
-      "nationality": "Polish",
-      "age": 50,
-      "purpose": "Tourism",
+      "name": "Amina Hassan",
+      "nationality": "Somali",
+      "age": 29,
+      "purpose": "Seeking asylum",
+      "emotional_state": "distressed",
+      "red_flags": [
+        "No documentation: Cannot provide proof of identity or asylum claim.",
+        "Inconsistent timeline: Claims to have fled last week but has no travel records."
+      ],
+      "script": [
+        {
+          "question": "Why are you seeking asylum?",
+          "response": "I fled my country because of war. My family is in danger.",
+          "emotion": "distressed",
+          "training_tip": "Use the PEACE model to gather accurate information."
+        },
+        {
+          "question": "Can you provide any identification?",
+          "response": "I lost my documents while fleeing.",
+          "emotion": "anxious",
+          "training_tip": "Request additional details to verify identity."
+        }
+      ],
+      "decision": "Detain for further questioning",
+      "decision_reason": "Lack of documentation and inconsistent timeline.",
+      "solutions": [
+        "Consult with an asylum officer for further evaluation.",
+        "Request biometric data (e.g., fingerprints) for identity verification."
+      ],
+      "protocols": [
+        "Detain under 8 CFR 235.3 for lack of documentation.",
+        "Provide access to legal counsel and asylum officer."
+      ],
+      "next_steps": [
+        "Practice interviewing asylum seekers without documentation.",
+        "Review protocols for handling undocumented individuals."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "James O’Connor",
+      "nationality": "Irish",
+      "age": 45,
+      "purpose": "Work",
+      "emotional_state": "confident",
+      "red_flags": [
+        "Fake work permit: Work permit appears forged.",
+        "Suspicious employer: Claims to work for a company under investigation."
+      ],
+      "script": [
+        {
+          "question": "What is the purpose of your visit?",
+          "response": "I’m here for a construction job.",
+          "emotion": "confident",
+          "training_tip": "Ask for specific details about the job and employer."
+        },
+        {
+          "question": "Can I see your work permit?",
+          "response": "Yes, here it is.",
+          "emotion": "defensive",
+          "training_tip": "Inspect documents for formatting errors and validate with issuing authorities."
+        }
+      ],
+      "decision": "Deny entry",
+      "decision_reason": "Fake work permit and suspicious employer.",
+      "solutions": [
+        "Validate work permit with the issuing embassy or consulate.",
+        "Conduct a background check on the claimed employer."
+      ],
+      "protocols": [
+        "Deny entry under 8 USC 1182(a)(7)(i) for invalid documents.",
+        "Provide instructions for appeal or reapplication."
+      ],
+      "next_steps": [
+        "Practice identifying forged work permits.",
+        "Simulate scenarios with travelers using fake employment claims."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Yara Khalid",
+      "nationality": "Syrian",
+      "age": 31,
+      "purpose": "Family visit",
       "emotional_state": "calm",
       "red_flags": [],
       "script": [
         {
           "question": "What is the purpose of your visit?",
-          "response": "I’m here to visit the Grand Canyon.",
-          "emotion": "excited"
+          "response": "I’m here to visit my sister in Chicago.",
+          "emotion": "calm",
+          "training_tip": "Verify family details and travel history."
         },
         {
-          "question": "How long will you stay?",
-          "response": "Two weeks. I have my return ticket here.",
-          "emotion": "calm"
+          "question": "Can you provide your sister’s address?",
+          "response": "Yes, here it is: [address].",
+          "emotion": "calm",
+          "training_tip": "Cross-check with TECS/ATS for travel history."
         }
       ],
       "decision": "Admit",
-      "decision_reason": "No red flags; all documents and responses are consistent."
+      "decision_reason": "No red flags; all documents and responses are consistent.",
+      "solutions": [
+        "Confirm return ticket and travel itinerary.",
+        "Welcome the traveler and provide entry instructions."
+      ],
+      "protocols": [
+        "Admit under 8 USC 1182(a)(7)(i) for valid documents and consistent responses."
+      ],
+      "next_steps": [
+        "Practice identifying legitimate travelers efficiently.",
+        "Conduct mock interviews with low-risk travelers to improve speed and accuracy."
+      ]
     },
     {
-      "id": 8,
-      "name": "Yusuf Khan",
-      "nationality": "Pakistani",
-      "age": 35,
+      "id": 10,
+      "name": "Mohammed Ali",
+      "nationality": "Egyptian",
+      "age": 40,
       "purpose": "Medical treatment",
       "emotional_state": "stressed",
       "red_flags": [
         "No medical documents: Cannot provide proof of medical appointment.",
-        "Inconsistent funding: Claims self-funded but has no bank statements.",
-        "Stressed demeanor: Appears overly anxious about questions."
+        "Inconsistent funding: Claims self-funded but has no bank statements."
       ],
       "script": [
         {
           "question": "What is the purpose of your visit?",
           "response": "I’m here for medical treatment.",
-          "emotion": "stressed"
+          "emotion": "stressed",
+          "training_tip": "Request documentation for medical treatment."
         },
         {
-          "question": "Can you provide documentation?",
+          "question": "Can you provide proof of your medical appointment?",
           "response": "I don’t have it with me... my doctor will send it later.",
-          "emotion": "defensive"
+          "emotion": "defensive",
+          "training_tip": "Look for inconsistencies in funding and documentation."
         }
       ],
       "decision": "Deny entry",
-      "decision_reason": "Lack of documentation and inconsistent funding claims."
+      "decision_reason": "Lack of documentation and inconsistent funding claims.",
+      "solutions": [
+        "Request additional documentation (e.g., medical records, bank statements).",
+        "Consult with a supervisor for further evaluation."
+      ],
+      "protocols": [
+        "Deny entry under 8 USC 1182(a)(7)(i) for lack of documentation.",
+        "Provide instructions for appeal or reapplication."
+      ],
+      "next_steps": [
+        "Practice handling travelers with medical claims.",
+        "Review case studies of medical visa fraud."
+      ]
     },
     {
-      "id": 9,
-      "name": "Sophie Dubois",
-      "nationality": "French",
-      "age": 27,
+      "id": 11,
+      "name": "Elena Petrova",
+      "nationality": "Russian",
+      "age": 26,
       "purpose": "Study",
       "emotional_state": "calm",
       "red_flags": [],
@@ -220,93 +408,69 @@
         {
           "question": "What is the purpose of your visit?",
           "response": "I’m here to study at [University Name].",
-          "emotion": "calm"
+          "emotion": "calm",
+          "training_tip": "Verify acceptance letter and enrollment details."
         },
         {
           "question": "Can I see your acceptance letter?",
           "response": "Yes, here it is.",
-          "emotion": "confident"
+          "emotion": "calm",
+          "training_tip": "Cross-check with TECS/ATS for travel history."
         }
       ],
       "decision": "Admit",
-      "decision_reason": "No red flags; all documents and responses are consistent."
+      "decision_reason": "No red flags; all documents and responses are consistent.",
+      "solutions": [
+        "Confirm enrollment details with the university.",
+        "Welcome the traveler and provide entry instructions."
+      ],
+      "protocols": [
+        "Admit under 8 USC 1182(a)(7)(i) for valid documents and consistent responses."
+      ],
+      "next_steps": [
+        "Practice identifying legitimate students.",
+        "Conduct mock interviews with student travelers."
+      ]
     },
     {
-      "id": 10,
-      "name": "Diego Rivera",
+      "id": 12,
+      "name": "Juan Martinez",
       "nationality": "Mexican",
-      "age": 33,
+      "age": 30,
       "purpose": "Work",
       "emotional_state": "nervous",
       "red_flags": [
         "Fake work permit: Work permit appears forged.",
-        "Inconsistent employer: Cannot provide employer contact details.",
-        "Nervous behavior: Fidgeting and avoiding eye contact."
+        "Inconsistent employer: Cannot provide employer contact details."
       ],
       "script": [
         {
           "question": "What is the purpose of your visit?",
           "response": "I’m here for a construction job.",
-          "emotion": "nervous"
+          "emotion": "nervous",
+          "training_tip": "Ask for specific details about the job and employer."
         },
         {
           "question": "Can I see your work permit?",
           "response": "Yes, here it is.",
-          "emotion": "defensive"
+          "emotion": "defensive",
+          "training_tip": "Inspect documents for formatting errors and validate with issuing authorities."
         }
       ],
       "decision": "Deny entry",
-      "decision_reason": "Fake work permit and inconsistent employer details."
-    },
-    {
-      "id": 11,
-      "name": "Aisha Mohammed",
-      "nationality": "Nigerian",
-      "age": 25,
-      "purpose": "Tourism",
-      "emotional_state": "calm",
-      "red_flags": [],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I’m here to visit New York City.",
-          "emotion": "excited"
-        },
-        {
-          "question": "How long will you stay?",
-          "response": "Two weeks. Here’s my return ticket.",
-          "emotion": "calm"
-        }
+      "decision_reason": "Fake work permit and inconsistent employer details.",
+      "solutions": [
+        "Validate work permit with the issuing embassy or consulate.",
+        "Conduct a background check on the claimed employer."
       ],
-      "decision": "Admit",
-      "decision_reason": "No red flags; all documents and responses are consistent."
-    },
-    {
-      "id": 12,
-      "name": "Raj Patel",
-      "nationality": "Indian",
-      "age": 42,
-      "purpose": "Business",
-      "emotional_state": "confident",
-      "red_flags": [
-        "Suspicious contacts: Mentions a person under surveillance.",
-        "Vague business details: Cannot provide specifics about business meetings.",
-        "Overly confident: Dismissive of follow-up questions."
+      "protocols": [
+        "Deny entry under 8 USC 1182(a)(7)(i) for invalid documents.",
+        "Provide instructions for appeal or reapplication."
       ],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I’m here for business meetings.",
-          "emotion": "confident"
-        },
-        {
-          "question": "Can you provide details about the meetings?",
-          "response": "It’s confidential... I can’t share details.",
-          "emotion": "evasive"
-        }
-      ],
-      "decision": "Detain for further questioning",
-      "decision_reason": "Suspicious contacts and vague business details."
+      "next_steps": [
+        "Practice identifying forged work permits.",
+        "Simulate scenarios with travelers using fake employment claims."
+      ]
     }
   ]
 }
