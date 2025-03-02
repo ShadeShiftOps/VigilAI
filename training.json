@@ -1,0 +1,14 @@
+{
+  "training_data.jsonl": [
+    {
+      "input": "Traveler: Maria Gonzalez (Mexican, 28) | Purpose: Tourism | Flags: Inconsistent dates, Suspicious travel history, Avoids eye contact | Question: 'What is the purpose of your visit?' Response: 'I'm here to visit New York City for two weeks.'",
+      "output": "**Decision Rationale**: Inconsistent travel dates (6-month ticket vs 2-week claim) combined with high-risk country travel history. **Recommended Action**: Detain under 8 CFR 235.3. **Verification Steps**: 1. Cross-check TECS/ATS 2. Validate airline ticket 3. Secondary screening",
+      "chain_of_thought": "1. Identify date discrepancy → 2. Correlate with travel patterns → 3. Assess non-verbal cues → 4. Apply detention protocol"
+    },
+    {
+      "input": "Traveler: Ahmed Al-Mansoori (Emirati, 45) | Flags: Forged documents, Fake company | Question: 'Who are you meeting with?' Response: 'I have a meeting with [fake company]'",
+      "output": "**Threat Level**: High | **Action**: Deny entry under 8 USC 1182(a)(7)(i) | **Protocols**: 1. Document verification 2. Company background check 3. Supervisor notification",
+      "chain_of_thought": "1. Detect document anomalies → 2. Validate corporate entities → 3. Apply denial criteria"
+    }
+  ]
+}

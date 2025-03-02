@@ -1,476 +1,696 @@
 {
-  "travelers": [
-    {
-      "id": 1,
-      "name": "Maria Gonzalez",
-      "nationality": "Mexican",
-      "age": 28,
-      "purpose": "Tourism",
-      "emotional_state": "nervous",
-      "red_flags": [
-        "Inconsistent dates: Claims 2-week visit but has a 6-month return ticket.",
-        "Suspicious travel history: Frequent travel to high-risk countries.",
-        "Avoids eye contact during questioning."
-      ],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here to visit New York City for two weeks.",
-          "emotion": "calm",
-          "training_tip": "Ask open-ended questions to gather more details."
+  "vigilai_ops_data.json": {
+    "scenarios": [
+      {
+        "id": 1,
+        "profile": {
+          "name": "Maria Gonzalez",
+          "demographics": {
+            "nationality": "Mexican",
+            "age": 28,
+            "gender": "Female"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
         },
-        {
-          "question": "Can I see your return ticket?",
-          "response": "Yes, here it is. I'm returning on [date 6 months later].",
-          "emotion": "nervous",
-          "training_tip": "Verify documents for inconsistencies and cross-check with databases."
-        }
-      ],
-      "decision": "Detain for further questioning",
-      "decision_reason": "Inconsistent travel dates and suspicious travel history.",
-      "solutions": [
-        "Cross-check travel history using TECS/ATS",
-        "Verify return ticket details with the airline"
-      ],
-      "protocols": [
-        "Detain under 8 CFR 235.3 for further investigation",
-        "Notify supervisor for secondary screening"
-      ],
-      "next_steps": [
-        "Practice identifying inconsistencies in travel documents",
-        "Conduct mock interviews with suspicious travelers"
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Ahmed Al-Mansoori",
-      "nationality": "Emirati",
-      "age": 45,
-      "purpose": "Business meeting",
-      "emotional_state": "overly confident",
-      "red_flags": [
-        "Forged documents: Work visa has incorrect formatting",
-        "Fake company: Claims to represent non-existent company",
-        "Overly confident and dismissive during questioning"
-      ],
-      "script": [
-        {
-          "question": "Who are you meeting with?",
-          "response": "I have a meeting with [fake company name].",
-          "emotion": "overly confident",
-          "training_tip": "Ask for specific company details"
+        "purpose": "Tourism",
+        "emotional_state": "nervous",
+        "red_flags": [
+          "Inconsistent dates: Claims 2-week visit but has a 6-month return ticket.",
+          "Suspicious travel history: Frequent travel to high-risk countries.",
+          "Avoids eye contact during questioning."
+        ],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here to visit New York City for two weeks.",
+            "emotion": "calm",
+            "training_tip": "Ask open-ended questions to gather more details."
+          },
+          {
+            "question": "Can I see your return ticket?",
+            "response": "Yes, here it is. I'm returning on [date 6 months later].",
+            "emotion": "nervous",
+            "training_tip": "Verify documents for inconsistencies and cross-check with databases."
+          }
+        ],
+        "decision": "Detain for further questioning",
+        "decision_reason": "Inconsistent travel dates and suspicious travel history.",
+        "solutions": [
+          "Cross-check travel history using TECS/ATS",
+          "Verify return ticket details with the airline"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Detain under 8 CFR 235.3 for further investigation",
+            "Notify supervisor for secondary screening"
+          ],
+          "escalation_paths": []
         },
-        {
-          "question": "Can I see your work visa?",
-          "response": "Of course, here it is.",
-          "emotion": "defensive",
-          "training_tip": "Inspect documents for formatting errors"
+        "next_steps": [
+          "Practice identifying inconsistencies in travel documents",
+          "Conduct mock interviews with suspicious travelers"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
         }
-      ],
-      "decision": "Deny entry",
-      "decision_reason": "Forged documents and fraudulent business claims.",
-      "solutions": [
-        "Validate visa with issuing embassy",
-        "Conduct company background check"
-      ],
-      "protocols": [
-        "Deny entry under 8 USC 1182(a)(7)(i)",
-        "Provide appeal instructions"
-      ],
-      "next_steps": [
-        "Practice identifying forged documents",
-        "Simulate fake identity scenarios"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Fatima Abdi",
-      "nationality": "Somali",
-      "age": 34,
-      "purpose": "Seeking asylum",
-      "emotional_state": "distressed",
-      "red_flags": [
-        "Inconsistent timeline of events",
-        "Rehearsed responses",
-        "Unable to provide specific details"
-      ],
-      "script": [
-        {
-          "question": "Why are you seeking asylum?",
-          "response": "I fled due to violence. My family was killed.",
-          "emotion": "sad",
-          "training_tip": "Use PEACE model for rapport building"
+      },
+      {
+        "id": 2,
+        "profile": {
+          "name": "Ahmed Al-Mansoori",
+          "demographics": {
+            "nationality": "Emirati",
+            "age": 45,
+            "gender": "Male"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
         },
-        {
-          "question": "Can you tell me more about the incident?",
-          "response": "It happened last year... no, two years ago.",
-          "emotion": "confused",
-          "training_tip": "Check timeline consistency"
-        }
-      ],
-      "decision": "Detain for further questioning",
-      "decision_reason": "Inconsistent timeline and rehearsed responses.",
-      "solutions": [
-        "Request additional documentation",
-        "Consult asylum officer"
-      ],
-      "protocols": [
-        "Detain under 8 CFR 235.3",
-        "Provide legal counsel access"
-      ],
-      "next_steps": [
-        "Practice asylum interviews",
-        "Review asylum fraud cases"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Emily Johnson",
-      "nationality": "Canadian",
-      "age": 22,
-      "purpose": "Vacation",
-      "emotional_state": "calm",
-      "red_flags": [],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here to visit Disneyland for a week.",
-          "emotion": "happy",
-          "training_tip": "Verify travel documents"
+        "purpose": "Business meeting",
+        "emotional_state": "overly confident",
+        "red_flags": [
+          "Forged documents: Work visa has incorrect formatting",
+          "Fake company: Claims to represent non-existent company",
+          "Overly confident and dismissive during questioning"
+        ],
+        "script": [
+          {
+            "question": "Who are you meeting with?",
+            "response": "I have a meeting with [fake company name].",
+            "emotion": "overly confident",
+            "training_tip": "Ask for specific company details"
+          },
+          {
+            "question": "Can I see your work visa?",
+            "response": "Of course, here it is.",
+            "emotion": "defensive",
+            "training_tip": "Inspect documents for formatting errors"
+          }
+        ],
+        "decision": "Deny entry",
+        "decision_reason": "Forged documents and fraudulent business claims.",
+        "solutions": [
+          "Validate visa with issuing embassy",
+          "Conduct company background check"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Deny entry under 8 USC 1182(a)(7)(i)",
+            "Provide appeal instructions"
+          ],
+          "escalation_paths": []
         },
-        {
-          "question": "Can I see your return ticket?",
-          "response": "Sure, returning on [date].",
-          "emotion": "calm",
-          "training_tip": "Cross-check with TECS/ATS"
+        "next_steps": [
+          "Practice identifying forged documents",
+          "Simulate fake identity scenarios"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
         }
-      ],
-      "decision": "Admit",
-      "decision_reason": "Consistent documents and responses.",
-      "solutions": [
-        "Confirm return ticket",
-        "Welcome traveler"
-      ],
-      "protocols": [
-        "Admit under 8 USC 1182(a)(7)(i)"
-      ],
-      "next_steps": [
-        "Practice efficient screening",
-        "Conduct low-risk interviews"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Chen Wei",
-      "nationality": "Chinese",
-      "age": 40,
-      "purpose": "Business",
-      "emotional_state": "evasive",
-      "red_flags": [
-        "Suspicious company connections",
-        "Vague responses about purpose",
-        "Evasive body language"
-      ],
-      "script": [
-        {
-          "question": "What is the nature of your business?",
-          "response": "I'm here for a conference... and meetings.",
-          "emotion": "evasive",
-          "training_tip": "Request specific meeting details"
+      },
+      {
+        "id": 3,
+        "profile": {
+          "name": "Fatima Abdi",
+          "demographics": {
+            "nationality": "Somali",
+            "age": 34,
+            "gender": "Female"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
         },
-        {
-          "question": "Can you provide conference details?",
-          "response": "It's about technology... no exact details.",
-          "emotion": "nervous",
-          "training_tip": "Verify with conference organizers"
-        }
-      ],
-      "decision": "Detain for further questioning",
-      "decision_reason": "Suspicious connections and evasive responses.",
-      "solutions": [
-        "Contact conference organizers",
-        "Check company databases"
-      ],
-      "protocols": [
-        "Detain under 8 CFR 235.3",
-        "Notify intelligence unit"
-      ],
-      "next_steps": [
-        "Practice evasive response handling",
-        "Review surveillance list protocols"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Luis Martinez",
-      "nationality": "Colombian",
-      "age": 29,
-      "purpose": "Family visit",
-      "emotional_state": "anxious",
-      "red_flags": [
-        "Previous visa overstay (3 months)",
-        "Inconsistent family details",
-        "Anxious behavior"
-      ],
-      "script": [
-        {
-          "question": "Who are you visiting?",
-          "response": "My cousin in Miami.",
-          "emotion": "anxious",
-          "training_tip": "Verify family relationships"
+        "purpose": "Seeking asylum",
+        "emotional_state": "distressed",
+        "red_flags": [
+          "Inconsistent timeline of events",
+          "Rehearsed responses",
+          "Unable to provide specific details"
+        ],
+        "script": [
+          {
+            "question": "Why are you seeking asylum?",
+            "response": "I fled due to violence. My family was killed.",
+            "emotion": "sad",
+            "training_tip": "Use PEACE model for rapport building"
+          },
+          {
+            "question": "Can you tell me more about the incident?",
+            "response": "It happened last year... no, two years ago.",
+            "emotion": "confused",
+            "training_tip": "Check timeline consistency"
+          }
+        ],
+        "decision": "Detain for further questioning",
+        "decision_reason": "Inconsistent timeline and rehearsed responses.",
+        "solutions": [
+          "Request additional documentation",
+          "Consult asylum officer"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Detain under 8 CFR 235.3"
+          ],
+          "escalation_paths": []
         },
-        {
-          "question": "Can you provide their address?",
-          "response": "I'll call them later for address.",
-          "emotion": "defensive",
-          "training_tip": "Check previous immigration records"
+        "next_steps": [
+          "Practice asylum interviews",
+          "Review asylum fraud cases"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
         }
-      ],
-      "decision": "Deny entry",
-      "decision_reason": "History of overstaying and inconsistent story.",
-      "solutions": [
-        "Verify previous visa records",
-        "Contact family member"
-      ],
-      "protocols": [
-        "Deny under 8 USC 1182(a)(9)(B)",
-        "Provide reapplication instructions"
-      ],
-      "next_steps": [
-        "Practice visa violation detection",
-        "Review overstay case studies"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Anna Kowalski",
-      "nationality": "Polish",
-      "age": 50,
-      "purpose": "Tourism",
-      "emotional_state": "calm",
-      "red_flags": [],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here to see the Grand Canyon.",
-          "emotion": "excited",
-          "training_tip": "Verify travel itinerary"
+      },
+      {
+        "id": 4,
+        "profile": {
+          "name": "Emily Johnson",
+          "demographics": {
+            "nationality": "Canadian",
+            "age": 22,
+            "gender": "Female"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
         },
-        {
-          "question": "How long will you stay?",
-          "response": "Two weeks with return ticket.",
-          "emotion": "calm",
-          "training_tip": "Confirm accommodation details"
-        }
-      ],
-      "decision": "Admit",
-      "decision_reason": "Consistent documents and responses.",
-      "solutions": [
-        "Confirm return ticket",
-        "Welcome traveler"
-      ],
-      "protocols": [
-        "Admit under 8 USC 1182(a)(7)(i)"
-      ],
-      "next_steps": [
-        "Practice low-risk screening",
-        "Conduct efficiency drills"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Yusuf Khan",
-      "nationality": "Pakistani",
-      "age": 35,
-      "purpose": "Medical treatment",
-      "emotional_state": "stressed",
-      "red_flags": [
-        "No medical documentation",
-        "Inconsistent funding claims",
-        "Overly anxious demeanor"
-      ],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here for medical treatment.",
-          "emotion": "stressed",
-          "training_tip": "Request medical records"
+        "purpose": "Vacation",
+        "emotional_state": "calm",
+        "red_flags": [],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here to visit Disneyland for a week.",
+            "emotion": "happy",
+            "training_tip": "Verify travel documents"
+          },
+          {
+            "question": "Can I see your return ticket?",
+            "response": "Sure, returning on [date].",
+            "emotion": "calm",
+            "training_tip": "Cross-check with TECS/ATS"
+          }
+        ],
+        "decision": "Admit",
+        "decision_reason": "Consistent documents and responses.",
+        "solutions": [
+          "Confirm return ticket",
+          "Welcome traveler"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Admit under 8 USC 1182(a)(7)(i)"
+          ],
+          "escalation_paths": []
         },
-        {
-          "question": "Can you provide documentation?",
-          "response": "My doctor will send it later.",
-          "emotion": "defensive",
-          "training_tip": "Verify financial capability"
+        "next_steps": [
+          "Practice efficient screening",
+          "Conduct low-risk interviews"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
         }
-      ],
-      "decision": "Deny entry",
-      "decision_reason": "Lack of documentation and inconsistent funding.",
-      "solutions": [
-        "Request medical records",
-        "Check financial statements"
-      ],
-      "protocols": [
-        "Deny under 8 USC 1182(a)(7)(i)",
-        "Provide appeal instructions"
-      ],
-      "next_steps": [
-        "Practice medical claim evaluation",
-        "Review medical visa protocols"
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Sophie Dubois",
-      "nationality": "French",
-      "age": 27,
-      "purpose": "Study",
-      "emotional_state": "calm",
-      "red_flags": [],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here to study at [University].",
-          "emotion": "calm",
-          "training_tip": "Verify acceptance letter"
+      },
+      {
+        "id": 5,
+        "profile": {
+          "name": "Chen Wei",
+          "demographics": {
+            "nationality": "Chinese",
+            "age": 40,
+            "gender": "Male"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
         },
-        {
-          "question": "Can I see your acceptance letter?",
-          "response": "Yes, here it is.",
-          "emotion": "confident",
-          "training_tip": "Confirm enrollment status"
-        }
-      ],
-      "decision": "Admit",
-      "decision_reason": "Valid documents and consistent responses.",
-      "solutions": [
-        "Confirm university enrollment",
-        "Welcome student"
-      ],
-      "protocols": [
-        "Admit under 8 USC 1182(a)(7)(i)"
-      ],
-      "next_steps": [
-        "Practice student visa screening",
-        "Review academic visa protocols"
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Diego Rivera",
-      "nationality": "Mexican",
-      "age": 33,
-      "purpose": "Work",
-      "emotional_state": "nervous",
-      "red_flags": [
-        "Suspicious work permit",
-        "Inconsistent employer details",
-        "Nervous behavior"
-      ],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here for a construction job.",
-          "emotion": "nervous",
-          "training_tip": "Verify employer information"
+        "purpose": "Business",
+        "emotional_state": "evasive",
+        "red_flags": [
+          "Suspicious company connections",
+          "Vague responses about purpose",
+          "Evasive body language"
+        ],
+        "script": [
+          {
+            "question": "What is the nature of your business?",
+            "response": "I'm here for a conference... and meetings.",
+            "emotion": "evasive",
+            "training_tip": "Request specific meeting details"
+          },
+          {
+            "question": "Can you provide conference details?",
+            "response": "It's about technology... no exact details.",
+            "emotion": "nervous",
+            "training_tip": "Verify with conference organizers"
+          }
+        ],
+        "decision": "Detain for further questioning",
+        "decision_reason": "Suspicious connections and evasive responses.",
+        "solutions": [
+          "Contact conference organizers",
+          "Check company databases"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Detain under 8 CFR 235.3",
+            "Notify intelligence unit"
+          ],
+          "escalation_paths": []
         },
-        {
-          "question": "Can I see your work permit?",
-          "response": "Yes, here it is.",
-          "emotion": "defensive",
-          "training_tip": "Inspect document security features"
+        "next_steps": [
+          "Practice evasive response handling",
+          "Review surveillance list protocols"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
         }
-      ],
-      "decision": "Deny entry",
-      "decision_reason": "Suspicious work permit and employer details.",
-      "solutions": [
-        "Validate work permit authenticity",
-        "Contact employer directly"
-      ],
-      "protocols": [
-        "Deny under 8 USC 1182(a)(7)(i)",
-        "Provide reapplication instructions"
-      ],
-      "next_steps": [
-        "Practice work visa verification",
-        "Review forged document examples"
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Aisha Mohammed",
-      "nationality": "Nigerian",
-      "age": 25,
-      "purpose": "Tourism",
-      "emotional_state": "calm",
-      "red_flags": [],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here to visit New York City.",
-          "emotion": "excited",
-          "training_tip": "Verify travel itinerary"
+      },
+      {
+        "id": 6,
+        "profile": {
+          "name": "Luis Martinez",
+          "demographics": {
+            "nationality": "Colombian",
+            "age": 29,
+            "gender": "Male"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
         },
-        {
-          "question": "How long will you stay?",
-          "response": "Two weeks with return ticket.",
-          "emotion": "calm",
-          "training_tip": "Confirm accommodation bookings"
-        }
-      ],
-      "decision": "Admit",
-      "decision_reason": "Consistent documents and responses.",
-      "solutions": [
-        "Confirm return ticket",
-        "Welcome traveler"
-      ],
-      "protocols": [
-        "Admit under 8 USC 1182(a)(7)(i)"
-      ],
-      "next_steps": [
-        "Practice tourist screening",
-        "Conduct cultural awareness training"
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Raj Patel",
-      "nationality": "Indian",
-      "age": 42,
-      "purpose": "Business",
-      "emotional_state": "confident",
-      "red_flags": [
-        "Mentions surveilled contacts",
-        "Vague meeting details",
-        "Dismissive attitude"
-      ],
-      "script": [
-        {
-          "question": "What is the purpose of your visit?",
-          "response": "I'm here for business meetings.",
-          "emotion": "confident",
-          "training_tip": "Request meeting specifics"
+        "purpose": "Family visit",
+        "emotional_state": "anxious",
+        "red_flags": [
+          "Previous visa overstay (3 months)",
+          "Inconsistent family details",
+          "Anxious behavior"
+        ],
+        "script": [
+          {
+            "question": "Who are you visiting?",
+            "response": "My cousin in Miami.",
+            "emotion": "anxious",
+            "training_tip": "Verify family relationships"
+          },
+          {
+            "question": "Can you provide their address?",
+            "response": "I'll call them later for address.",
+            "emotion": "defensive",
+            "training_tip": "Check previous immigration records"
+          }
+        ],
+        "decision": "Deny entry",
+        "decision_reason": "History of overstaying and inconsistent story.",
+        "solutions": [
+          "Verify previous visa records",
+          "Contact family member"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Deny under 8 USC 1182(a)(9)(B)",
+            "Provide reapplication instructions"
+          ],
+          "escalation_paths": []
         },
-        {
-          "question": "Can you provide meeting details?",
-          "response": "Confidential - can't share.",
-          "emotion": "evasive",
-          "training_tip": "Check watchlist databases"
+        "next_steps": [
+          "Practice visa violation detection",
+          "Review overstay case studies"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
         }
-      ],
-      "decision": "Detain for further questioning",
-      "decision_reason": "Suspicious contacts and vague business details.",
-      "solutions": [
-        "Cross-check with intelligence databases",
-        "Notify counterterrorism unit"
-      ],
-      "protocols": [
-        "Detain under 8 CFR 235.3",
-        "Initiate enhanced screening"
-      ],
-      "next_steps": [
-        "Practice counterterrorism protocols",
-        "Review surveillance list procedures"
-      ]
+      },
+      {
+        "id": 7,
+        "profile": {
+          "name": "Anna Kowalski",
+          "demographics": {
+            "nationality": "Polish",
+            "age": 50,
+            "gender": "Female"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
+        },
+        "purpose": "Tourism",
+        "emotional_state": "calm",
+        "red_flags": [],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here to see the Grand Canyon.",
+            "emotion": "excited",
+            "training_tip": "Verify travel itinerary"
+          },
+          {
+            "question": "How long will you stay?",
+            "response": "Two weeks with return ticket.",
+            "emotion": "calm",
+            "training_tip": "Confirm accommodation details"
+          }
+        ],
+        "decision": "Admit",
+        "decision_reason": "Consistent documents and responses.",
+        "solutions": [
+          "Confirm return ticket",
+          "Welcome traveler"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Admit under 8 USC 1182(a)(7)(i)"
+          ],
+          "escalation_paths": []
+        },
+        "next_steps": [
+          "Practice low-risk screening",
+          "Conduct efficiency drills"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
+        }
+      },
+      {
+        "id": 8,
+        "profile": {
+          "name": "Yusuf Khan",
+          "demographics": {
+            "nationality": "Pakistani",
+            "age": 35,
+            "gender": "Male"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
+        },
+        "purpose": "Medical treatment",
+        "emotional_state": "stressed",
+        "red_flags": [
+          "No medical documentation",
+          "Inconsistent funding claims",
+          "Overly anxious demeanor"
+        ],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here for medical treatment.",
+            "emotion": "stressed",
+            "training_tip": "Request medical records"
+          },
+          {
+            "question": "Can you provide documentation?",
+            "response": "My doctor will send it later.",
+            "emotion": "defensive",
+            "training_tip": "Verify financial capability"
+          }
+        ],
+        "decision": "Deny entry",
+        "decision_reason": "Lack of documentation and inconsistent funding.",
+        "solutions": [
+          "Request medical records",
+          "Check financial statements"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Deny under 8 USC 1182(a)(7)(i)",
+            "Provide appeal instructions"
+          ],
+          "escalation_paths": []
+        },
+        "next_steps": [
+          "Practice medical claim evaluation",
+          "Review medical visa protocols"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
+        }
+      },
+      {
+        "id": 9,
+        "profile": {
+          "name": "Sophie Dubois",
+          "demographics": {
+            "nationality": "French",
+            "age": 27,
+            "gender": "Female"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
+        },
+        "purpose": "Study",
+        "emotional_state": "calm",
+        "red_flags": [],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here to study at [University].",
+            "emotion": "calm",
+            "training_tip": "Verify acceptance letter"
+          },
+          {
+            "question": "Can I see your acceptance letter?",
+            "response": "Yes, here it is.",
+            "emotion": "confident",
+            "training_tip": "Confirm enrollment status"
+          }
+        ],
+        "decision": "Admit",
+        "decision_reason": "Valid documents and consistent responses.",
+        "solutions": [
+          "Confirm university enrollment",
+          "Welcome student"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Admit under 8 USC 1182(a)(7)(i)"
+          ],
+          "escalation_paths": []
+        },
+        "next_steps": [
+          "Practice student visa screening",
+          "Review academic visa protocols"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
+        }
+      },
+      {
+        "id": 10,
+        "profile": {
+          "name": "Diego Rivera",
+          "demographics": {
+            "nationality": "Mexican",
+            "age": 33,
+            "gender": "Male"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
+        },
+        "purpose": "Work",
+        "emotional_state": "nervous",
+        "red_flags": [
+          "Suspicious work permit",
+          "Inconsistent employer details",
+          "Nervous behavior"
+        ],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here for a construction job.",
+            "emotion": "nervous",
+            "training_tip": "Verify employer information"
+          },
+          {
+            "question": "Can I see your work permit?",
+            "response": "Yes, here it is.",
+            "emotion": "defensive",
+            "training_tip": "Inspect document security features"
+          }
+        ],
+        "decision": "Deny entry",
+        "decision_reason": "Suspicious work permit and employer details.",
+        "solutions": [
+          "Validate work permit authenticity",
+          "Contact employer directly"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Deny under 8 USC 1182(a)(7)(i)",
+            "Provide reapplication instructions"
+          ],
+          "escalation_paths": []
+        },
+        "next_steps": [
+          "Practice work visa verification",
+          "Review forged document examples"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
+        }
+      },
+      {
+        "id": 11,
+        "profile": {
+          "name": "Aisha Mohammed",
+          "demographics": {
+            "nationality": "Nigerian",
+            "age": 25,
+            "gender": "Female"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
+        },
+        "purpose": "Tourism",
+        "emotional_state": "calm",
+        "red_flags": [],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here to visit New York City.",
+            "emotion": "excited",
+            "training_tip": "Verify travel itinerary"
+          },
+          {
+            "question": "How long will you stay?",
+            "response": "Two weeks with return ticket.",
+            "emotion": "calm",
+            "training_tip": "Confirm accommodation bookings"
+          }
+        ],
+        "decision": "Admit",
+        "decision_reason": "Consistent documents and responses.",
+        "solutions": [
+          "Confirm return ticket",
+          "Welcome traveler"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Admit under 8 USC 1182(a)(7)(i)"
+          ],
+          "escalation_paths": []
+        },
+        "next_steps": [
+          "Practice tourist screening",
+          "Conduct cultural awareness training"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
+        }
+      },
+      {
+        "id": 12,
+        "profile": {
+          "name": "Raj Patel",
+          "demographics": {
+            "nationality": "Indian",
+            "age": 42,
+            "gender": "Male"
+          },
+          "behavioral_indicators": {
+            "verbal_cues": [],
+            "nonverbal_cues": []
+          }
+        },
+        "purpose": "Business",
+        "emotional_state": "confident",
+        "red_flags": [
+          "Mentions surveilled contacts",
+          "Vague meeting details",
+          "Dismissive attitude"
+        ],
+        "script": [
+          {
+            "question": "What is the purpose of your visit?",
+            "response": "I'm here for business meetings.",
+            "emotion": "confident",
+            "training_tip": "Request meeting specifics"
+          },
+          {
+            "question": "Can you provide meeting details?",
+            "response": "Confidential - can't share.",
+            "emotion": "evasive",
+            "training_tip": "Check watchlist databases"
+          }
+        ],
+        "decision": "Detain for further questioning",
+        "decision_reason": "Suspicious contacts and vague business details.",
+        "solutions": [
+          "Cross-check with intelligence databases",
+          "Notify counterterrorism unit"
+        ],
+        "response_protocols": {
+          "immediate_actions": [
+            "Detain under 8 CFR 235.3",
+            "Initiate enhanced screening"
+          ],
+          "escalation_paths": []
+        },
+        "next_steps": [
+          "Practice counterterrorism protocols",
+          "Review surveillance list procedures"
+        ],
+        "threat_matrix": {
+          "risk_factors": []
+        }
+      }
+    ],
+    "decision_framework": {
+      "assessment_criteria": {
+        "low_risk": [
+          "Consistent documentation",
+          "Verifiable purpose"
+        ],
+        "medium_risk": [
+          "Minor discrepancies",
+          "Plausible explanations"
+        ],
+        "high_risk": [
+          "Forged documents",
+          "Security list matches"
+        ]
+      },
+      "response_matrix": {
+        "admit": {
+          "threshold": 0.3,
+          "protocols": [
+            "Standard processing",
+            "Welcome briefing"
+          ]
+        },
+        "secondary_screening": {
+          "threshold": 0.6,
+          "protocols": [
+            "Detailed document check",
+            "Supervisor review"
+          ]
+        },
+        "deny_entry": {
+          "threshold": 0.8,
+          "protocols": [
+            "CBP Form I-877",
+            "Removal coordination"
+          ]
+        }
+      }
     }
-  ]
+  }
 }
